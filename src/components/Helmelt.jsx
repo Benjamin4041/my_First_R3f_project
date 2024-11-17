@@ -1,4 +1,4 @@
-import React, { Suspense } from 'react'
+import React from 'react'
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader.js'
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js'
 import { useLoader } from '@react-three/fiber'
@@ -9,8 +9,8 @@ export default function Helmelt() {
         loader.setDRACOLoader(dracoLoader)
     })
     return (<>
-        <Suspense>
-            <primitive object={model.scene} scale={5} position-y={-1} />
-        </Suspense>
+
+        <primitive object={model.scene} scale={5} position-y={-1} />
+
     </>)
 }
