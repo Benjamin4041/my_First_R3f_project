@@ -12,7 +12,7 @@ export default function Models() {
     const model = useGLTF('./assets/3dmodels/hamburger.glb')
     return (<>
 
-        <primitive object={model.scene} scale={0.35} position-y={-1} />
+        <primitive object={model.scene} scale={0.35} position-y={-1} position-x={2} />
 
     </>)
 }

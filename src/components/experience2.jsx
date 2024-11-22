@@ -5,6 +5,7 @@ import { Perf } from 'r3f-perf'
 import React, { Suspense, useRef } from 'react'
 import Placeholder from './Placeholder'
 import Models from './models'
+import Fox from './fox'
 
 
 export default function Experience2() {
@@ -19,6 +20,7 @@ export default function Experience2() {
            <Models/>
 
         </Suspense>
+        <Fox/>
         <mesh scale={10} position-y={-1} rotation-x={- Math.PI * 0.5}>
             <planeGeometry />
             <meshStandardMaterial color={'greenyellow'} />
